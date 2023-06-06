@@ -49,12 +49,16 @@ button:active {
 }
 
 .cart {
-  margin: 5rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  margin: 2rem;
   border: 2px solid #540075;
   border-radius: 10px;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .cart h2 {
@@ -65,7 +69,7 @@ button:active {
 
 .product-list {
   list-style: none;
-  margin: 0 2rem;
+  margin: 10rem 2rem;
   padding: 0;
 }
 
@@ -76,15 +80,22 @@ button:active {
   max-width: 90%;
 }
 
+.product-item__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
 .product-item img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
+  width: 90%;
+  height: 15rem;
+  object-fit: contain;
 }
 
 .product-item__content {
   padding: 1rem;
   text-align: center;
+  justify-content: center;
 }
 
 .product-item h2,
